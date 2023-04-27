@@ -1,0 +1,109 @@
+React js
+It is a js library because  as a framework react mai itne features nhi hai jitnw framework mai hone chahiye islie react is a library
+1 Single Page Application(websites =>react)
+2. Mobile Application(mob app =>react native)
+============================================
+ES6=> 
+let ,const
+arrow function
+Import & Export Module	1. Normal Export	2. default export
+Class and object
+spread & Rest Opeartor
+Array destructure
+Object destructure
+primitive reference
+Map
+Filter
+
+=====================================
+React is alll about components
+Component is reusable building blocks
+Jo bhi chiz repeat ho rhi hai usko hmlog component banaege
+Benifits of component
+1.Reusibility
+2.Help in maintaining code
+So in react we create componentn with html css js
+and then comibining these components we reate a web pagee
+component are made with 2 types = 1.functional based 2. class based
+Inside component function return jsx code which means js file allow html code in js file
+===============================================
+PROPS=>To receive data from component we use props
+kiisi bhi component ko call karne k time koi data bhej te hai to wo data aacess karne k lie props.children ka use karte hai
+==========================================================================
+State=>
+Usestate ek hook hai react ka hook ki pehchan use se hoti hai
+Ager koi variable data change hota hai then we use usesatate 
+usestate takes 2 arg useState(value,func(optional))
+usestate returns array with 2 args [value,function]
+===========================================================================
+parent => child component mai data PROPS k through late hai
+or child=>Parent component mai data using arrow function lete hai
+====================================================
+Jab bhi koi variable update hota hai using useState then state change hoa hai and application automatically run hota hai from start
+useEffect====>
+Ager koivar change hone par ya data ko ek hi baar fetch karna hai to we can use useEffect hook
+useEffect takes 2 arg 1 is call back fun and another is array inside array we can give var name if that var change then useEffect will run
+=========================================
+Jab bhi koi data fetch kar rhe hai to for loop mai wo component ko calll karne k time uniq key must be set it is imp
+React dont have its own routing so thats why we use 3rd party routing
+===========================================================================
+##############################REACT WITH CODE EVOLUTION###################################################
+to creat react app =>npx create-react-app
+npx=>( Node Package eXecute) is npm package runner which is installed when node is installed so we dont need to install again npx
+To Use packages without installing in our prjct we use npx=> cmd => npx create-react-app <Project_Name>
+npm is used to installing packages glovbally in our project=>npm install create-react-app
+							     npm create-react-app <Project_Name>
+create-react-app is package 
+Folder Structure
+Node Module =>All dependencies are installled when we run npm install or npx create-react-app <Project_Name>
+Components =>It is building block oif react application and we can reuse the components
+1. Functional Component=>Mainlu Responsible for Ui
+2. Class Component=>Provide lifecycle hooks
+		    Maintain thier own private data
+`                   It has much more feature than functional based component
+If we need state and life cycle hooks then we use class component
+======================================================
+Life cycle Methods React
+3 phases
+1. Mounting=>First time load
+=>constructor()
+=>static getDerivedStateFromProps()
+=>render()
+=>componentDidMount()
+2. Updating=>updating
+=>static getDerivedStateFromProps()
+=>shouldComponentUpdate()
+=>render()
+=>getSnapshotBeforeUpdate()
+=>componentDidUpdate()
+3.Unmounting=>Removing components
+=>componentWillUnmount()
+
+======================================
+class component Lifecycle | functional compoenent LifeCycle
+componentDidUpdate => 	  | 	useState => (state change hone par calll hoga)
+constructor	  =>      | =>   (Page load hone se pehle call hoga)
+render		=>	  | => (Page Load hone par call hota hai)
+componentDidMount =>	  |	useEffect => (Page Load Hone par call hoga)=>this function does not return any value or store value
+ComponentwillUnmount(component remove hone k baad call hoga)	
+==========================
+
+3 
+1 mounting => constructor render componentDidMount
+2 updating => shouldcomponentupdate
+3 unmounting => Componentwillunmount
+
+===============================================
+useContext
+A(parent)
+||
+\/
+B(Child)
+||
+\/
+c(child)
+before useContext We have to pass data to each child component from parent component 
+if i want to send data from parent to c child component then useContext is used
+---------------------------------
+useMemo =>To incraese the performance of application
+this function return value and store val

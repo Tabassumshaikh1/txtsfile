@@ -1,0 +1,7 @@
+Encrypt=>Ot is 2 way communication
+plaintext=>encode/decode=>newtext
+newtext=>encode/decode=>plaintext
+Hacker can easily hack
+=================================
+Hashing => It is a 1 way communication
+Means we cant decode the value after generating hashing val

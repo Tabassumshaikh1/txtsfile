@@ -1,0 +1,17 @@
+Npx => in react
+node package runnner which is installed when node is installed
+npx k wajah se hmlog ko pacakage install nhi karna padh ta hai (create-react-app)
+dirctly hmlog react app bana sakte hai without installing
+npm=>
+with npm we have to 1st install  (create-react-app) package globally and then we can
+create react app
+==============
+components=>
+1.Stateless function compoentn=> It is a smple es6 function which takes props as input and return html (JSX)
+				It is stateless component
+				It is mainly responsible for the ui
+				Hooks
+2.statefull class component=>It is a smple es6 class which takes props as as input and return html (JSX)
+				It is statefull component
+				complex ui  logic
+				

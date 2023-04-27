@@ -1,0 +1,21 @@
+Hooks Rule=>
+1. Always define hook inside function
+2. Function Name shoud be in pascalcase(eg:TabassumShaikh)
+3.we can directly import hook from react
+4. dont call hooks inside loops , conditioal statements
+==================================
+Hooks=> It is a special function which is used to hook the react feature
+1.useSate()=>It manage state It is used to update state
+2.useEffect()=>It manage side effects like apicall, directly updating dom
+ It render automatically when page is load
+React has 2 type of forms 
+	1 Controlled 
+	2 Uncontrolled
+3.useRef=>It is same like useSatete but it will not rerender the component
+we use useref with uncontrolled form to get formValue
+to get value from input field 
+to apply styles
+=>
+To Handle do in function component we use useRef hook
+3 useReducer=>To manage complex state it is used
+with the help of useReducer and Context api we can manage state globally

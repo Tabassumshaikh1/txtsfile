@@ -1,0 +1,143 @@
+curryed function example
+function add(x) {
+  return function(y) {
+    return x + y;
+  }
+}
+
+console.log(add(5)(3));
+//Promise all Example
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+//promise all
+
+
+
+const promise1 = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+       resolve("Promise 1 resolve") 
+    },200)})
+
+const promise2 = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+       resolve("Promise 2 resolve") 
+    },3000)
+})
+const promise3 = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+       reject("Promise 3 reject") 
+    },4000)
+})
+
+Promise.all([promise1,promise2,promise3])
+.then((res)=>{
+    console.log(res)
+}).catch((err)=>{
+    console.log(err)
+})
+======================
+IIFE =>Immediate Invoke function Expression
+function a(x,y){
+return x+y
+}(3,4)
+==========================
+Async /await vs promises 
+
+//promise 
+const   p= new Promise((resolve,reject)=>{
+    
+    console.log("pending")
+    
+    setTimeout(()=>{
+        resolve("p is resolve")
+    },2000)
+})
+
+ p.then((res)=>{
+    console.log(res)
+}).catch((err)=>{
+    console.log("call")
+    console.log(err)
+})
+
+
+
+//async/await
+
+async function a (){
+    try{
+       const ap = await new Promise ((resolve,reject)=>{
+           setTimeout(()=>{
+               resolve("ap resolve");
+           },2000)
+       })
+       console.log(ap)
+    }catch(err){
+        console.log(err)
+    }
+}
+
+a();
+================================
+callback function
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+
+
+
+
+//CRAETE DATA
+//RENDER DATA
+
+var arr=[1,2,3]
+
+function render()
+{  
+    
+    setTimeout(()=>{
+        console.log("pending")
+        console.log(arr)
+    })
+   
+   
+}
+
+function createdata(num,callback){
+   
+    setTimeout(()=>{
+         console.log("creating")
+       arr.push(num) 
+    })
+    callback();
+}
+
+createdata(4,render)
+createdata(5,render)
+createdata(6,render)
+======================
+if we add !in front of array then it type will become boolean
+typeof([])=>Object
+typeof(![])=>boolean
+======================================
+diff between normal fun and arro
+==============================================
+
+express js node js
+==================================
+//REST Operator
+
+function abc(...arr){
+    console.log(arr)
+}
+abc(10,20,30,40,50)
+
+
+// //destructure
+// const obj={
+//     name:'Tabassum',
+//     age:20
+// }
+// let {name,age}=obj
+// console.log(name)

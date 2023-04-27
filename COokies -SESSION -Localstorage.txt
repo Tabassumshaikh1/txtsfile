@@ -1,0 +1,5 @@
+to staore small amt of data in browser we use cookies
+there are 3 type of storage
+1.Session Strg
+2.Cookie Strg
+3.Local Strg

@@ -1,0 +1,33 @@
+Closures=>
+function inside a function along with its lexical scope is called as closure
+eg:=>
+function x(){
+    let a=7
+    function y(){
+        console.log(a)
+    }
+    return y
+}
+let z = x()
+console.log(z)
+z()
+===================
+Hoisting=>
+In js variables does not support hoisting in global context
+first time variables get assigned value as undefined and
+after that the proper value get assigned .
+only normal functions are hoisted
+variables,arrow,expression function are not hoisted because it is consider
+as a variable and inside a variable the initial value is undefined
+==============================
+upsert in mongodb=>
+if we dont have any record which weare updating then upsert:true
+will insert that record
+bydefault upsert is false
+
+===================
+Es6=>
+let const spread operator
+for of loop
+map
+arrow functions

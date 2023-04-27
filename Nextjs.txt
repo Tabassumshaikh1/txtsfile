@@ -1,0 +1,21 @@
+What is next js?
+It is a framework of react js(REact js ka supporting sturecture hai) that gives u building blocks to create fast web application
+
+
+================
+React is bad for search engine optimisation because it is a client side rendering
+and for ranking websites in google we have next js is best solution
+next js is a sever side rendering
+========================
+Pre-Rendering => browser on hone se pehle hi html data load hota hai and then interaction start hota hai
+2 types
+1. static generation => Api se jo data aaega usko pehle se hi statically define karege browser pe
+
+2 server side rendering
+=======================================
+Fallback=> 3 args = 1. false => Ager koi page ka static path define nhi hua hai page load hone par or usparer click karege  to 404 not found page aaega 
+2. true => ager page define ni bhi kiya hai to bhi data dega || Pehle click par page generate hoga and then data show hoga tab tak server ka wait karega (ager data aane tak kuch loder/img/text lagana hoga to ye use karege)
+3. blocking=>Jab tak data nhi ata server se tab tak ye wait karta hai (ager data aane tak kuch loder/img/text nhi lagana hoga to ye use karege)
+================================
+Static generatuion=> Build k time html load hota hai
+SSR=>When client request then that page html is loadede
